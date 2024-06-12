@@ -6,7 +6,7 @@ opt.number = true
 opt.relativenumber = true
 
 -- indentation
-opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
+opt.tabstop = 4 -- 4 spaces for tabs (prettier default)
 opt.shiftwidth = 2 -- 2 spaces for indent width
 opt.autoindent = true -- copy indent from current line when starting new one
 
