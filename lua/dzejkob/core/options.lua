@@ -1,20 +1,27 @@
-
 local opt = vim.opt
 
 -- Line numbers
 opt.number = true
 opt.relativenumber = true
 
--- indentation
-opt.tabstop = 4 -- 4 spaces for tabs (prettier default)
-opt.shiftwidth = 2 -- 2 spaces for indent width
-opt.autoindent = true -- copy indent from current line when starting new one
+-- Indentation
+opt.tabstop = 4          -- 4 spaces for tabs (prettier default)
+opt.shiftwidth = 2       -- 2 spaces for indent width
+opt.autoindent = true    -- Copy indent from current line when starting new one
 
--- line wrapping
-opt.wrap = false -- disable line wrapping
+-- Line wrapping
+opt.wrap = false         -- Disable line wrapping
 
--- search settings
-opt.ignorecase = true -- ignore case when searching
-opt.smartcase = true -- if mixed case id included in the search, assumes you want case-sensitive
+-- Search settings
+opt.ignorecase = true    -- Ignore case when searching
+opt.smartcase = true     -- If mixed case is included in the search, assumes you want case-sensitive
 
+-- Enable transparent background
+vim.cmd [[
+  highlight Normal ctermbg=none guibg=none
+  highlight NonText ctermbg=none guibg=none
+  highlight LineNr ctermbg=none guibg=none
+  highlight Folded ctermbg=none guibg=none
+  highlight EndOfBuffer ctermbg=none guibg=none
+]]
 
