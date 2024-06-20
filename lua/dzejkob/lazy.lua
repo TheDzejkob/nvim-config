@@ -15,7 +15,8 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Load plugins
 require("lazy").setup({
-  { import = "dzejkob.plugins" },
+  { import = "dzejkob.plugins"},
+  { import = "dzejkob.plugins.languages"},
 	require('dzejkob.plugins.languages.lspconfig'),
 }, {
   notify = false,
