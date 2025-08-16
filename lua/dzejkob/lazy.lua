@@ -16,8 +16,8 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Load plugins
 require("lazy").setup({
-    { import = "dzejkob.plugins" },  -- import all your language plugins
-	{ import = "require.plugins.languages"}
+    { import = "dzejkob.plugins" },  -- imports all plugins exept the subfolder 
+	{ import = "require.plugins.languages"} -- imports subfolder whowould have guest
 }, {
     notify = false,
 })
