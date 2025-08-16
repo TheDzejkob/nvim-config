@@ -25,4 +25,8 @@ vim.cmd [[
   highlight Folded ctermbg=none guibg=none
   highlight EndOfBuffer ctermbg=none guibg=none
 ]]
-
+-- Transparent background
+vim.cmd([[hi Normal guibg=NONE ctermbg=NONE]])
+vim.cmd([[hi NormalNC guibg=NONE ctermbg=NONE]])
+vim.cmd([[hi NormalFloat guibg=NONE]])
+vim.cmd([[hi FloatBorder guibg=NONE]])
