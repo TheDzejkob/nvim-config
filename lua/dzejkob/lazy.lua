@@ -1,4 +1,5 @@
 -- ~/.config/nvim/lua/dzejkob/lazy.lua
+
 -- Ensure lazy.nvim is installed
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -7,7 +8,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
+    "--branch=stable",
     lazypath,
   })
 end
@@ -15,15 +16,8 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Load plugins
 require("lazy").setup({
-<<<<<<< HEAD
-  { import = "dzejkob.plugins" },
-	require('dzejkob.plugins.lspconfig'),
-=======
-  { import = "dzejkob.plugins"},
-  { import = "dzejkob.plugins.languages"},
-	require('dzejkob.plugins.languages.lspconfig'),
->>>>>>> master
+    { import = "dzejkob.plugins.languages" },  -- import all your language plugins
 }, {
-  notify = false,
+    notify = false,
 })
 

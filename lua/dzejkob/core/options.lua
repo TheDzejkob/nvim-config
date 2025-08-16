@@ -16,10 +16,7 @@ opt.wrap = false         -- Disable line wrapping
 opt.ignorecase = true    -- Ignore case when searching
 opt.smartcase = true     -- If mixed case is included in the search, assumes you want case-sensitive
 
-<<<<<<< HEAD
-=======
 opt.clipboard:append("unnamedplus")
->>>>>>> master
 -- Enable transparent background
 vim.cmd [[
   highlight Normal ctermbg=none guibg=none
